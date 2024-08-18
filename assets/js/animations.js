@@ -4,6 +4,15 @@ window.addEventListener('scroll', function() {
     parallax.style.transform = 'translateY(' + scrollPosition * -0.2 + 'px)';
 });
 
+window.addEventListener('scroll', function() {
+    const nav = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     const menuItems = document.querySelectorAll('.nav-item a');
     const sections = document.querySelectorAll('section');
