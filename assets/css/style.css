@@ -607,6 +607,7 @@ button:focus {
   .photo {
     width: 100%;
     clip-path: inset(0 0 30% 0);
+    margin-bottom: -15vh;
   }
 }
 
