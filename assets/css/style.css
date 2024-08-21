@@ -458,9 +458,21 @@ button:focus {
   background-color: transparent;
   border-color: #337ab7;
 }
-/* .logo {
-  color: #;
-} */
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.item {
+  padding: 10px;
+}
+
+.photo {
+  width: 80%;
+}
+
 .logo .logo-light {
   display: inline-block;
 }
@@ -588,9 +600,16 @@ button:focus {
   }
   .container {
     max-width: 90%;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .photo {
+    width: 100%;
+    clip-path: inset(0 0 30% 0);
+  }
 }
-  
-}
+
 @media (max-width: 576px) {
   .section {
     padding: 50px 0;
@@ -600,5 +619,13 @@ button:focus {
   }
   .container {
     max-width: 540px;
-}
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo {
+    width: 100%;
+    clip-path: inset(0 0 30% 0);
+  }
 }
